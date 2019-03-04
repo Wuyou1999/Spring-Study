@@ -1,0 +1,2 @@
+2019-03-04 10:09:44  INFO ClassPathXmlApplicationContext:588 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Mon Mar 04 10:09:44 CST 2019]; root of context hierarchy
+2019-03-04 10:09:44  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
