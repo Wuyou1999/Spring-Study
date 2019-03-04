@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="helloWorld" class="com.soft1721.spring.hello.HelloWorld"/>
+     <bean id="student" class="com.soft1721.spring.hello.Student">
+          <constructor-arg name="name" value="Wuyou"></constructor-arg>
+          <constructor-arg name="age"  value="20"></constructor-arg>
+          <constructor-arg name="phone" ref="phone"></constructor-arg>
+          <!--<constructor-arg name="name" value="Mike"></constructor-arg>
+          <constructor-arg name="age" value="20"></constructor-arg>-->
+     </bean>
+     <bean id="phone" class="com.soft1721.spring.hello.Phone">
+          <property name="brand" value="荣耀v20"></property>
+          <property name="price"  value="2999"></property>
+          <property name="colour"  value="蓝色"></property>
+     </bean>
+</beans>
