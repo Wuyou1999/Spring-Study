@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--定义bean-->
-    <bean id="messageServiceImpl"
+  <!--  <bean id="messageServiceImpl"
           class="com.spring.IoC.MessageServiceImpl">
         <constructor-arg name="username" value="Way Lau"/>
         <constructor-arg name="age" value="30"/>
@@ -11,5 +11,86 @@
 
     <bean id="messagePrinter" class="com.spring.IoC.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
+    </bean>-->
+
+    <bean id="car1" class="com.spring.IoC.Car">
+        <property name="brand" value="奔驰"/>
+        <property name="color" value="白色"/>
+        <property name="parameter" value="2.0T"/>
+    </bean>
+
+    <bean id="car2" class="com.spring.IoC.Car">
+        <property name="brand" value="宝马"/>
+        <property name="color" value="白色"/>
+        <property name="parameter" value="2.0T"/>
+    </bean>
+
+    <bean id="car3" class="com.spring.IoC.Car">
+        <property name="brand" value="保时捷"/>
+        <property name="color" value="白色"/>
+        <property name="parameter" value="2.0T"/>
+    </bean>
+
+    <bean id="boss1" class="com.spring.IoC.Boss">
+        <property name="name" value="马云"/>
+        <property name="company" value="阿里巴巴"/>
+        <property name="car" ref="car1"/>
+        <property name="hobbies">
+            <list>
+                <value>阅读</value>
+                <value>写作</value>
+             </list>
+        </property>
+    </bean>
+
+    <bean id="boss2" class="com.spring.IoC.Boss">
+        <property name="name" value="马化腾"/>
+        <property name="company" value="腾讯"/>
+        <property name="car" ref="car2"/>
+        <property name="hobbies">
+            <list>
+                <value>跑步</value>
+                <value>上网</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="boss3" class="com.spring.IoC.Boss">
+        <property name="name" value="雷军"/>
+        <property name="company" value="小米"/>
+        <property name="car" ref="car3"/>
+        <property name="hobbies">
+            <list>
+                <value>篮球</value>
+                <value>足球</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="theme" class="com.spring.IoC.Meeting">
+        <property name="theme" value="5G研讨会">
+
+        </property>
+        <property name="boss">
+            <list>
+                <ref bean="boss1"></ref>
+                <ref bean="boss2"></ref>
+                <ref bean="boss3"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="max" class="com.spring.IoC.Max">
+        <constructor-arg name="a" value="5"/>
+        <constructor-arg name="b" value="3"/>
+
+    </bean>
+
+    <bean id="user" class="com.spring.IoC.User">
+        <constructor-arg name="account" value="admin"></constructor-arg>
+        <constructor-arg name="password" value="111"></constructor-arg>
+    </bean>
+
+    <bean id="userLogin" class="com.spring.IoC.UserLogin">
+        <property name="user" ref="user"></property>
     </bean>
 </beans>
