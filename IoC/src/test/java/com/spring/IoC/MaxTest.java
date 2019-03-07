@@ -18,6 +18,6 @@ public class MaxTest {
 
     @Test
     public void getMax() throws Exception{
-       // assertEquals(expected:5,max.getMax());
+        assertEquals(5,max.getMax());
     }
 }

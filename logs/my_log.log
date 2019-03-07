@@ -32,3 +32,8 @@
 2019-03-04 14:26:45  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
 2019-03-04 14:26:55  INFO ClassPathXmlApplicationContext:588 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1963006a: startup date [Mon Mar 04 14:26:55 CST 2019]; root of context hierarchy
 2019-03-04 14:26:55  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2019-03-04 17:21:46  INFO ClassPathXmlApplicationContext:588 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Mon Mar 04 17:21:46 CST 2019]; root of context hierarchy
+2019-03-04 17:21:46  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2019-03-04 17:21:55  INFO AnnotationConfigApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b701da1: startup date [Mon Mar 04 17:21:55 CST 2019]; root of context hierarchy
+2019-03-07 09:41:52  INFO ClassPathXmlApplicationContext:588 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@dcf3e99: startup date [Thu Mar 07 09:41:52 CST 2019]; root of context hierarchy
+2019-03-07 09:41:53  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
