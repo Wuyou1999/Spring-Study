@@ -1,6 +1,7 @@
 package com.spring.web.service.impl;
 
 import com.spring.web.entity.CourseVO;
+import com.spring.web.entity.CourseVO1;
 import com.spring.web.service.CourseService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,5 +21,10 @@ public class CourseServiceImplTest {
     public void selectCurrentCourses() {
         List<CourseVO> courseVOList = courseService.selectCurrentCourses();
         courseVOList.forEach(courseVO -> System.out.println(courseVO));
+    }
+    @Test
+    public void selectFinshedCourses() {
+        List<CourseVO1> courseVO1List = courseService.selectFinshedCourses();
+        courseVO1List.forEach(courseVO1 -> System.out.println(courseVO1));
     }
 }

@@ -1,6 +1,7 @@
 package com.spring.web.controller;
 
 import com.spring.web.entity.CourseVO;
+import com.spring.web.entity.CourseVO1;
 import com.spring.web.service.CourseService;
 import com.spring.web.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,10 @@ public class CourseController {
     public List<CourseVO> selectCourses() {
         List<CourseVO> courseVOList = courseService.selectCurrentCourses();
         return courseVOList;
+    }
+    @RequestMapping(value = "fin-courses", method = RequestMethod.GET)
+    public List<CourseVO1> selectFinshedCourses() {
+        List<CourseVO1> courseVO1List = courseService.selectFinshedCourses();
+        return courseVO1List;
     }
 }
